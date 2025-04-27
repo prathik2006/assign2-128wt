@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { fetchStudents, deleteStudent } from './api';  // Import API functions
+import { fetchStudents, deleteStudent } from '../api'; 
 
 const StudentList = () => {
   const [students, setStudents] = useState([]);
