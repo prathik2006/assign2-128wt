@@ -20,7 +20,7 @@ app.use('/api/students', studentRoutes);
 const __dirname1 = path.resolve();
 app.use(express.static(path.join(__dirname1, 'frontend/build')));
 
-app.get('*', (req, res) => {
+app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname1, 'frontend/build', 'index.html'));
 });
 
