@@ -25,7 +25,6 @@ const EditStudent = () => {
         const response = await axios.get(`/api/students/${id}`);
         const student = response.data;
         
-        // Format date for input date field (YYYY-MM-DD)
         const formattedDob = student.dob ? new Date(student.dob).toISOString().split('T')[0] : '';
         
         setFormData({
