@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+// Log environment variable to confirm it's loaded
 console.log('Backend URL:', import.meta.env.VITE_BACKEND_URL);
 
 const API = axios.create({
