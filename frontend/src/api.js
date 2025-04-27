@@ -6,3 +6,4 @@ const API = axios.create({
 
 export const fetchStudents = () => API.get('/api/students');
 export const createStudent = (newStudent) => API.post('/api/students', newStudent);
+export const deleteStudent = (id) => API.delete(`/api/students/${id}`);
