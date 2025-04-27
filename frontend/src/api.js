@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000', 
+  baseURL: import.meta.env.VITE_BACKEND_URL || 'https://assign2-128wt.onrender.com', 
 });
 
 export const fetchStudents = () => API.get('/api/students');
